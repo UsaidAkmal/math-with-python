@@ -36,9 +36,34 @@ print('''
 
 # 60 = 2*2*3*5 
 
+n = 15
+
 # kita akan menulis baris baris python yang akan melakukan operasi Factorization ini, bismillah
 
-def find_factor (n) : # merupakan sebuah fungsi untuk dapat menemukan faktor dari sebuah bilangan 
+def find_factor(n) : # merupakan sebuah fungsi untuk dapat menemukan faktor dari sebuah bilangan 
     factor = [] # merupakan sebuah array penampung bilangan faktor yang nantinya akan disimpan
 
-    # kita akan mencari dari 1 sampai bilangan n (bilangan itu sendiri)  
+    # kita akan mencari dari 1 sampai bilangan n (bilangan itu sendiri)
+    for i in range (1, n + 1): # n + 1 digunakan untuk mendapatkan bilangan n secara utuh tidak dikurangi 1 (n-1) jika tidak menggunakan n+1 maka n akan dikurangi dengan 1 secra default
+
+        # jika i habis membagi n maka nilai i akan disimpan kedalam variabel factor menggunakan fungsi append
+        if n % i == 0:
+            factor.append(i)
+    return factor  # nilai variabel factor yang didapat dari operasi find_factor akan dikembalikan menggunakan fungsi return
+print(find_factor(n)) # varibel find_factor(n) akan dicetak serta di tampilkan berdasarkan bilangan variabel n yang sudah di input.
+
+# Penjelasan sederhana untuk kode di atas:
+
+# Kita membuat fungsi bernama temukan_faktor yang menerima bilangan n
+
+# Kita membuat daftar kosong bernama faktor untuk menyimpan semua faktor
+
+# Kita mencoba semua bilangan dari 1 sampai n
+
+# n % i == 0 artinya "apakah n dibagi i tidak ada sisa?". Jika tidak ada sisa, berarti i adalah faktor dari n
+
+# Jika i adalah faktor, kita tambahkan ke daftar faktor
+
+# Terakhir, kita mengembalikan daftar lengkap faktor-faktor tersebut
+
+# Kode di atas akan menghasilkan: [1, 2, 3, 4, 6, 8, 12, 24] untuk n = 24
