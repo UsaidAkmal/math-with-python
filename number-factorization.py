@@ -24,7 +24,7 @@ print('''
 
 # 1 * 12 = 12
 # 3 * 4 = 12     
-# 2 * 6 = 12 
+# 2 * 6 = 12
 
 # beberapa kombinasi angka di atas merupakan contoh dari operasi Faktorisasi
 # seperti menemukan "bahan dasar" dari sebuah bilangan
@@ -38,5 +38,7 @@ print('''
 
 # kita akan menulis baris baris python yang akan melakukan operasi Factorization ini, bismillah
 
-def find_factor (n) :
-    factor = []
+def find_factor (n) : # merupakan sebuah fungsi untuk dapat menemukan faktor dari sebuah bilangan 
+    factor = [] # merupakan sebuah array penampung bilangan faktor yang nantinya akan disimpan
+
+    # kita akan mencari dari 1 sampai bilangan n (bilangan itu sendiri)  
