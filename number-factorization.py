@@ -1,3 +1,15 @@
+print('''
+
+ |  ____|       | |           (_)        | | (_)            
+ | |__ __ _  ___| |_ ___  _ __ _ ______ _| |_ _  ___  _ __  
+ |  __/ _` |/ __| __/ _ \| '__| |_  / _` | __| |/ _ \| '_ \ 
+ | | | (_| | (__| || (_) | |  | |/ / (_| | |_| | (_) | | | |
+ |_|  \__,_|\___|\__\___/|_|  |_/___\__,_|\__|_|\___/|_| |_|
+ 
+ the origin of a number 
+
+''')
+
 # hello my name is akmal this is my mini project for my experiences
 # im from indonesia, Please forgive me if my English is not good. 
 
@@ -14,4 +26,12 @@
 # 3 * 4 = 12     
 # 2 * 6 = 12 
 
-#  jadi beberapakombinasi angka yang dikalikan ini merupakan contoh dari operasi Faktorisasi
+# beberapa kombinasi angka di atas merupakan contoh dari operasi Faktorisasi
+# seperti menemukan "bahan dasar" dari sebuah bilangan
+
+# BILANGAN PRIMA DAN FAKTORISASI PRIMA
+# Bilangan prima merupakaan bilangan ynag ISTIMEWA karena hanya bisa dibagi dengan dengan 1 dan dirinya sendiri. ( satu bukan merupakan bilanga prima karena hanya memiliki satu faktor yaitu dirinya sendiri )
+
+# CONTOHNYA :
+
+# 
