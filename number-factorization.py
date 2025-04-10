@@ -34,4 +34,9 @@ print('''
 
 # CONTOHNYA :
 
-# 
+# 60 = 2*2*3*5 
+
+# kita akan menulis baris baris python yang akan melakukan operasi Factorization ini, bismillah
+
+def find_factor (n) :
+    factor = []
