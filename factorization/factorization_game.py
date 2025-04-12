@@ -29,7 +29,7 @@ def find_factors(n):
 
 def tebak_bilangan():
     # ini merupakan function untuk kita dapat menebak bilangan dari 1-50 untuk mencari factor terbesar dari beberapa factor kecil yang mempengaruhi.
-    secret_number = random.randint(1, 50)
+    secret_number = random.randint(2, 50)
 
     # find the factors (berdasarkan secret number yang sudah ditentukan oleh modul random dari python)
     factor = find_factors(secret_number)
@@ -47,8 +47,11 @@ def tebak_bilangan():
             print(f"Congrats! Your answer is true, the secret number is: {secret_number}") # akan mencetak secret number, karena tebakan sesuai dengan factor terbesar dari factor2 kecil (jawabanya).
             return
         else: # jika salah maka cetak string berikut.
-            print("Shit! your answer is false, try again.")
+            print(f"Shit! your answer is false, try again.")
 
-        print(f"OOh nooo, your trials all done, the secret number is: {secret_number}, see you leter!")
+        print(f"OOh nooo, your trials all done, the secret number is: {secret_number}")
+
+        
 
 tebak_bilangan()
+#  DONE BOSS QUEEE
