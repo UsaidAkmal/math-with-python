@@ -16,17 +16,17 @@ import math
 
 n = 15
 
-def find_factor(n):
+def find_factor_optimized(n):
     factor = []
-    
-    for i in range(1, n + 1):
-        
+    # hanya merunut sampai akar kuadrat dari n
+    for i in range(1, int(math.sqrt(n)) + 1):
+        # jika i habis membagi n maka masukan menggunakan append kedalam var factor
         if n % i == 0:
             factor.append(i)
+            # 
     return factor
 
 
 print(find_factor(24))
 
 
-# BELUM KELAR MAU MADANG DULU AWOAKOWKA
