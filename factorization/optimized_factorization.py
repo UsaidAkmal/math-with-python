@@ -14,7 +14,7 @@ print('''
 
 import math
 
-n = 15
+n = 1000000
 
 def find_factor_optimized(n):
     factor = [] # adalah variabel yang menampung hasil fungsi berupa faktor yang sudah di temukan 
