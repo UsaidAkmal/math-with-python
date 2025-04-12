@@ -36,3 +36,5 @@ def tebak_bilangan():
             print("Shit! your answer is false, try again.")
 
         print(f"OOh nooo, your trials all done, the secret number is: {secret_number}, see you leter!")
+
+tebak_bilangan()
