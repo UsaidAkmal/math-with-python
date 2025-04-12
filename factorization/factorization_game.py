@@ -12,6 +12,20 @@ print ('''
 ''')
 
 import random # untuk mengimport modul random dari library python
+import math # untuk mengimport modul math yang nantinya digunakan dalam fungsi math.sqrt untuk otimalisasi perunutan.
+
+def find_factors(n):
+    factors = []
+    # Hanya iterasi sampai akar kuadrat dari n
+    for i in range(1, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            factors.append(i)
+            # Tambahkan pasangan faktor
+            if i != n // i:
+                factors.append(n // i)
+    # Urutkan faktor-faktor untuk output yang rapi
+    factors.sort()
+    return factors
 
 def tebak_bilangan():
     # ini merupakan function untuk kita dapat menebak bilangan dari 1-50 untuk mencari factor terbesar dari beberapa factor kecil yang mempengaruhi.
