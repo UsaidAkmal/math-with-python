@@ -7,7 +7,7 @@ print ('''
  | | | (_| | (__| || (_) | |  | |/ / (_| | |_| | (_) | | | |
  |_|  \__,_|\___|\__\___/|_|  |_/___\__,_|\__|_|\___/|_| |_|
   
- the origin of number, can you play with this function?
+ the origin of number, can you play with this functions?
 
 ''')
 
