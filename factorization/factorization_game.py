@@ -12,7 +12,7 @@ print ('''
 ''')
 
 import random # untuk mengimport modul random dari library python
-import math # untuk mengimport modul math yang nantinya digunakan dalam fungsi math.sqrt untuk otimalisasi perunutan.
+import math # untuk  mengimport modul math yang nantinya digunakan dalam fungsi math.sqrt untuk otimalisasi perunutan.
 
 def find_factors(n):
     factors = []
