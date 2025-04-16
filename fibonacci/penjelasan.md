@@ -31,3 +31,37 @@ Pola sisik pada nanas dan biji pada bunga matahari membentuk spiral dengan jumla
 
 ### 🌿 Pola Pertumbuhan Tanaman  
 Cara daun tumbuh pada batang (*phyllotaxis*) sering mengikuti **sudut emas**, yang terkait erat dengan rasio Fibonacci.
+
+Bukti empiris ini bukan sekadar kebetulan. Pola Fibonacci tampaknya merupakan solusi optimal untuk pertumbuhan dan penempatan dalam ruang terbatas, yang dikembangkan melalui jutaan tahun evolusi.
+
+
+## ✨ Rasio Emas: Keindahan Tersembunyi Fibonacci
+
+Salah satu aspek paling memikat dari deret Fibonacci adalah hubungannya dengan **Rasio Emas** (*Golden Ratio*), sebuah nilai yang dianggap sebagai proporsi paling indah secara visual.  
+
+Jika kita membagi setiap bilangan Fibonacci dengan bilangan sebelumnya (untuk bilangan yang cukup besar), hasilnya akan semakin mendekati nilai **1,61803...**, yang dikenal sebagai **Rasio Emas** (φ atau *phi*).  
+
+Mari kita lihat contoh perhitungannya:  
+
+3/2 = 1,5
+5/3 ≈ 1,666...
+8/5 = 1,6
+13/8 = 1,625
+21/13 ≈ 1,615...
+34/21 ≈ 1,619...
+
+
+**Pola Terungkap:**  
+- Semakin besar bilangan Fibonacci, semakin dekat rasionya ke **φ**.  
+- Fenomena ini bukan sekadar keindahan matematika, tetapi juga menjadi dasar proporsi yang dianggap paling menyenangkan secara estetika dalam:  
+  - 🎨 **Seni** (contoh: lukisan *Mona Lisa*),  
+  - 🏛 **Arsitektur** (contoh: Parthenon di Yunani),  
+  - ✒️ **Desain** (logo perusahaan hingga tata letak website).  
+
+### 🌍 Aplikasi Modern  
+Kini, Rasio Emas dan Fibonacci banyak diterapkan dalam:  
+- **Desain produk** (smartphone, kemasan),  
+- **Fotografi** (*rule of thirds*),  
+- **Trading saham** (*Fibonacci retracement*).  
+
+# pada intinya deret fibonacci merupakan deret yang menggunakan perhitungan penjumlahan dengan bilangan sebelunya untuk menciptkan bilangan baru, dan korelasinhya dengan golden ratio itu cukup erat.
