@@ -6,7 +6,7 @@
 
 # 
 
-def fibonacci_recursive(n): # mendefinisikan variabel, fungsi yang akan di gunakan dan di buat yaitu fibonacci_recursive.
+def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di buat yaitu fibonacci_recursive.
 
     # membuat kasus dasar untuk pengaplikasian rekursif, tanpa kasus dasar maka rekrusif akan melakukan infinity loop karena tidak memiliki defnisi kasus dasar yang jelas.
 
@@ -30,3 +30,4 @@ def fibonacci_recursive(n): # mendefinisikan variabel, fungsi yang akan di gunak
 for i in range(40): # untuk variabel i dengan deret 1 - 10 
     print(fibonacci_recursive(i), end=" ") # tampilkan hasil dari fungsi utama dengan  deret 1-10 berupa deret fibonacci.
     
+# kekurangan dari pendekatan atau metode ini adalah ketika nilai (n) yang di input terlalu besar maka, akan terjaid proses komputasi yang sangat meningkat secara eksponesial (berpangkat) karena setiap pemanggilan rekursif menghasilkan dua pemanggilan rekursif baru, dan banyak perhitungan duplikat dilakukan.
