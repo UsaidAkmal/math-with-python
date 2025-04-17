@@ -22,6 +22,8 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
 
     a, b = 0, 1 # disini a dan b, a adalah f(0)=0 dan b adalah f(1)=1
 
-    
+    # mulai melakukan iterasi menggunakan f(1)=1 dan f(n-1) untuk 
+
+
 
 
