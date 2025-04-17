@@ -29,11 +29,15 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
     for i in range(1, n): # untuk i dalam deret 1 hingga n
 
         # simpan nilai a sebelum di ubah untuk melakukan efisiensi perhitungan. agar tidak terjadi proses komputasi yang berlebih. 
-        temp = a
+        temp = a # nilai a akan selalu disimpan,sebagai salah satu prinsip iterasi, yaitu mengulang bilangan yang sudah ada.
 
         # mulai melakukan perhitungan vvariabel utama yaitu f(0) dan f(1) dengan melalui temporary variabel yang sudah tersimpan. untuk memanfaatkan data yang sudah di simpan. 
-        a = b 
-        b = temp + b
+        a = b # geser nilai a ke nilai b (angka fibonacci terbaru)
+        # contoh : nilai a pada perhitungan pertama kali awalnya adalah 1 maka setelah a = b maka a sekarang adalah 2. karena perhitungan awal adalah 0+1=1 dan 1+1=2.
+
+        b = temp + b # jumlahkan angka fibonacci berikutnya dengan menjumlahkan nilai lama(temp) + b (nilai saat ini, yang sudah menjadi "a" terbaru).
+
+        # contoh b = 2 (temp) + 3 (b saat lama) = 5 (akan menghasilkan f(n) atau b baru) yang nantinya akan menjadi b lama dan akan di jumlahkan dengan varibel temp(variabel sebelumnya yang tesimpan) kembali  
 
 
 
