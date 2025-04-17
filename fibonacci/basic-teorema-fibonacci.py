@@ -1,3 +1,16 @@
+print ('''
+       
+
+
+        .----..-..----.  .----. .-. .-.  .--.   .---.  .---. .-.
+        | {_  | || {}  }/  {}  \|  `| | / {} \ /  ___}/  ___}| |
+        | |   | || {}  }\      /| |\  |/  /\  \\     }\     }| |
+        `-'   `-'`----'  `----' `-' `-'`-'  `-' `---'  `---' `-'
+        
+        - example,how god communicate with human in the world.
+
+       ''')
+
 # SIMPLE IMPLEMENTATION FIBONACCI TEOREMA WITH MY SNAKE AKA Python
 
 # 1. Pendekatan Rekursif Sederhana
@@ -27,7 +40,7 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
     
     # setelah menulis fungsinya selanjutnya kita akan menampilkan deret fibonacci yang sudah dibuat dengan metode rekursif dengan menggunakan for dan print 
 
-for i in range(40): # untuk variabel i dengan deret 1 - 10 
+for i in range(10): # untuk variabel i dengan deret 1 - 10 
     print(fibonacci_recursive(i), end=" ") # tampilkan hasil dari fungsi utama dengan  deret 1-10 berupa deret fibonacci.
     
 # kekurangan dari pendekatan atau metode ini adalah ketika nilai (n) yang di input terlalu besar maka, akan terjaid proses komputasi yang sangat meningkat secara eksponesial (berpangkat) karena setiap pemanggilan rekursif menghasilkan dua pemanggilan rekursif baru, dan banyak perhitungan duplikat dilakukan.

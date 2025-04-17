@@ -1,3 +1,20 @@
+print ('''
+       
+
+
+        .----..-..----.  .----. .-. .-.  .--.   .---.  .---. .-.
+        | {_  | || {}  }/  {}  \|  `| | / {} \ /  ___}/  ___}| |
+        | |   | || {}  }\      /| |\  |/  /\  \\     }\     }| |
+        `-'   `-'`----'  `----' `-' `-'`-'  `-' `---'  `---' `-'
+        
+        - example,how god communicate with human in the world.
+        - with iteration mechanism
+       
+
+       
+       ''')
+
+
 # UNTUK MENGATASI PENINGKATAN KOMPUTASI YANG MENINGKAT SECARA EKSPONENSIAL YANG AKAN MEMAKAN BANYAK MEMMORY DAN CORE, MAKA KITA HARUS MENCARU SOLUSINYA.
 
 # YAITU DENGAN MENGGUNAKAN PENDEKATAN ITERATIF / ITERASI
@@ -22,7 +39,7 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
 
     a, b = 0, 1 # disini a dan b, a adalah f(0)=0 dan b adalah f(1)=1
 
-    # mulai melakukan iterasi menggunakan f(1)=1 dan f(n-1) "deret fibonacci itu sendiri" untuk mendapatkan nilai yang akurat untuk f(n) 
+    # mulai melakukan iterasi dimulai dari f(1)=1 dan f(n-1) "deret fibonacci itu sendiri" untuk mendapatkan nilai yang akurat untuk f(n) 
 
     # lalu kita akan mengaitkannya menggunakan loop dari deret 1 hingga n.
 
@@ -37,7 +54,34 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
 
         b = temp + b # jumlahkan angka fibonacci berikutnya dengan menjumlahkan nilai lama(temp) + b (nilai saat ini, yang sudah menjadi "a" terbaru).
 
-        # contoh b = 2 (temp) + 3 (b saat lama) = 5 (akan menghasilkan f(n) atau b baru) yang nantinya akan menjadi b lama dan akan di jumlahkan dengan varibel temp(variabel sebelumnya yang tesimpan) kembali  
+        # contoh b = 2 (temp) + 3 (b saat lama) = 5 (akan menghasilkan f(n) atau b baru) yang nantinya akan menjadi b lama dan akan di jumlahkan dengan varibel temp(variabel sebelumnya yang tesimpan) untuk kemudian menghasilkan f(n) atau b saat ini. dan begitu seterusnya hingga mencapai range yang kita tentukan.
+
+        # Sebelum:  
+
+        # a = 2, b = 3, temp = ?  
+
+        # Langkah 1 (temp = a):  
+        # temp = 2  
+
+        # Langkah 2 (a = b):  
+        # a = 3  
+
+        # Langkah 3 (b = temp + b):  
+        # b = 2 + 3 = 5  
+
+        # Hasil akhir:  
+        # a = 3, b = 5  
+
+    # selanjutnya kita akan menyimpan nilai angka fibonacci dengan range (n) yang nantinya akan kita tentukan berapa deretnya saat inigin mencetak nilai yang sudah kita hitung.
+
+    return b # kembalikan nilai b yang merupakan fibonacci ke-n 
+
+# selanjutnya kkita akan mencetak 100 angka pertama pada deret fibonacci yang sudah kita hitung menggunakan mekanisme itertif.
+for i in range(100): # untuk i dalam deret 1-100
+    print(fibonacci_iteratif(i), end=" ") # cetaklah hasil dari fungsi utama berdasarkan jumlah varabe i , dan akhiri ketikan sudah mencapai deret i.
+
+# DONE YA GES YA
 
 
+# tentunya dengan menggunakan methode atau mekanisme ini output yang akan dicetak jauh lebih cepat dan akurat, karena kita memanfaatkan variabel temporary yang telah tersimpan dan melakukan iterasi pada 2 bilangan sebelumnya untuk menghasilkan bilangan baru yang nantinya akan dilakukan operasi komputasi yang sama hingga mencapai range atau batas yang kita inginkan.
 
