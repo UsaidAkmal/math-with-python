@@ -64,4 +64,4 @@ Kini, Rasio Emas dan Fibonacci banyak diterapkan dalam:
 - **Fotografi** (*rule of thirds*),  
 - **Trading saham** (*Fibonacci retracement*).  
 
-# pada intinya deret fibonacci merupakan deret yang menggunakan perhitungan penjumlahan dengan bilangan sebelunya untuk menciptkan bilangan baru, dan korelasinhya dengan golden ratio itu cukup erat.
+# pada intinya deret fibonacci merupakan deret yang menggunakan perhitungan penjumlahan dengan bilangan sebelunya untuk menciptakan bilangan baru, dan korelasinhya dengan golden ratio itu cukup erat.
