@@ -7,4 +7,4 @@
 
 # untuk melakukannya kita akan membuat variabel fungsi 
 
-# lanjut besok cuy
+# lanjut cuy
