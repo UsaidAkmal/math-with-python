@@ -30,9 +30,19 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
     elif n == 1: # namun jika n adalah satu, maka kembalikan nilai 1
         return 1 
     
-    # kali ini kita akan mendefinisikannya dimulai dengan angka nol dan satu, atau dari angka nol ke angka satu (tanpa definisi ini komputer tidak akan tau kapan ia harus berhenti), untuk menghindari dan mencegah infinity loop yang tidak di inginkan.
+    # mengapa 0 dan 1? karena deret fibonacci menggunakan konsep angka 0 dari india sebagai salah satu patokan utama untuk memulai perhitungan, dengan mendefinisikannya dimulai dengan angka nol dan satu maka python akan memulai perhitungan dimulai dari 0 + 1, atau dari angka nol ke angka satu, tanpa definisi ini komputer tidak akan tau kapan ia harus berhenti, untuk menghindari dan mencegah infinity loop yang tidak di inginkan.
 
-    # kasus rekursif: menjumlahkan duangka yang sudah di definisikan pada base case yaitu 0 dan 1
+    # kasus rekursif: menjumlahkan dua angka yang sudah di definisikan pada base case yaitu 0 dan 1, yang kemudian nantinya akan digunakan sebagai f(n) pada perhitungan lanjutan dengan waktu eksponensial  O(2^n).
+
+    # disclaimer waktu eksponensial O(2^n) merupakan waktu yang sangat tidak efisien untuk jumlah deret yang banyak,mengapa tidak efisien ?
+
+    # sebelum kita mencap O(2^n) sebagai waktu eksponesial yang tidak efisien,kita juga harus memahami apa itu KOMPLEKSITAS WAKTU.
+
+    # Kompleksitas waktu (time complexity) adalah cara untuk mengukur seberapa cepat atau lambat sebuah algoritma bekerja berdasarkan ukuran input.
+
+    # mengapa input bisa memperlambat proses algoritma? karena setiap fungsi yang kita tulis dengan menggunakan kode pada hakikatnya akan melakukan proses perhitungan yang disebut dengan algoritma, bagaimana algoritma dapat bekerja? untuk algoritma dapat bekerja kita memerlukan yang namanya input atau suatu kondisi dimana nantinya akan memicu proses pada kode yang sudah kita tulis dengan menggunakan fungsi yang di dalamnya terdapat algoritma.
+
+    # misalnya
 
     else: # atau kembalikan nilai fungsi utama (fibonacci_recursive) dengan penjumlahan dua angka sebelumnya
 
