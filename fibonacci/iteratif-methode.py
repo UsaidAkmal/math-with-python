@@ -82,11 +82,11 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
     return b # kembalikan nilai b yang merupakan fibonacci ke-n 
 
 # selanjutnya kkita akan mencetak 100 angka pertama pada deret fibonacci yang sudah kita hitung menggunakan mekanisme itertif.
-for i in range(100): # untuk i dalam deret 1-100
+for i in range(1000): # untuk i dalam deret 1-100
     print(fibonacci_iteratif(i), end=" ") # cetaklah hasil dari fungsi utama berdasarkan jumlah varabe i , dan akhiri ketikan sudah mencapai deret i.
 
 # DONE YA GES YA
 
 
 # tentunya dengan menggunakan methode atau mekanisme ini output yang akan dicetak jauh lebih cepat dan akurat, karena kita memanfaatkan variabel temporary yang telah tersimpan dan melakukan iterasi pada 2 bilangan sebelumnya untuk menghasilkan bilangan baru yang nantinya akan dilakukan operasi komputasi yang sama hingga mencapai range atau batas yang kita inginkan.
-
+# Proses ini jauh lebih efisien karena menghindari perhitungan duplikat.
