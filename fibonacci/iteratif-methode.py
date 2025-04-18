@@ -4,7 +4,7 @@ print ('''
 
         .----..-..----.  .----. .-. .-.  .--.   .---.  .---. .-.
         | {_  | || {}  }/  {}  \|  `| | / {} \ /  ___}/  ___}| |
-        | |   | || {}  }\      /| |\  |/  /\  \\     }\     }| |
+        | |   | || {}  }\      /| |\  |/  /\  \\     } \     }| |
         `-'   `-'`----'  `----' `-' `-'`-'  `-' `---'  `---' `-'
         
         - example,how god communicate with human in the world.
@@ -53,6 +53,7 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
         # contoh : nilai a pada perhitungan pertama kali awalnya adalah 1 maka setelah a = b maka a sekarang adalah 2. karena perhitungan awal adalah 0+1=1 dan 1+1=2.
 
         b = temp + b # jumlahkan angka fibonacci berikutnya dengan menjumlahkan nilai lama(temp) + b (nilai saat ini, yang sudah menjadi "a" terbaru).
+        # contoh : untuk menghasilkan f(4) yang merupakan angka 3 dari hasil penjumlahan 2 + 1, maka kita menggunakan bilangan f(3) yang merupakan angka 2 sebagai faktor utama penjumlahan dengan nilai sebelumnya yaitu f(2) yang merupakan angka 1, ketika penjumlahan dilakukan maka f(2) + f(3) = f(4) + f(3) = f(5), begituseterusnya.
 
         # contoh b = 2 (temp) + 3 (b saat lama) = 5 (akan menghasilkan f(n) atau b baru) yang nantinya akan menjadi b lama dan akan di jumlahkan dengan varibel temp(variabel sebelumnya yang tesimpan) untuk kemudian menghasilkan f(n) atau b saat ini. dan begitu seterusnya hingga mencapai range yang kita tentukan.
 
@@ -71,6 +72,10 @@ def fibonacci_iteratif(n): # mendefinisikan fungsi yang akan di buat
 
         # Hasil akhir:  
         # a = 3, b = 5  
+
+        # Pada setiap iterasi, kita menghitung angka Fibonacci berikutnya dan memperbarui variabel a dan b
+
+        # Proses ini jauh lebih efisien karena menghindari perhitungan duplikat.
 
     # selanjutnya kita akan menyimpan nilai angka fibonacci dengan range (n) yang nantinya akan kita tentukan berapa deretnya saat inigin mencetak nilai yang sudah kita hitung.
 
