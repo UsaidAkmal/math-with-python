@@ -62,7 +62,7 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
 
     # nah dapat dilihat bahwa variabel f(3) dan f(2) di panggil secara terus menerus yang membuat proses menjadi meningkat secara eksponensial.
 
-#-------------------------------------------------------------------------
+#------------------------------------------------------------------
 
 # lanjut :
 
