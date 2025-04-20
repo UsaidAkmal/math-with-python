@@ -8,7 +8,7 @@ print ('''
         `-'   `-'`----'  `----' `-' `-'`-'  `-' `---'  `---' `-'
         
         - example,how god communicate with human in the world.
-        - with iteration mechanism
+        - with iteration mechanism for optimize.
        
 
        

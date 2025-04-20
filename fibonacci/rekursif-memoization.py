@@ -1,3 +1,17 @@
+print ('''
+       
+
+
+        .----..-..----.  .----. .-. .-.  .--.   .---.  .---. .-.
+        | {_  | || {}  }/  {}  \|  `| | / {} \ /  ___}/  ___}| |
+        | |   | || {}  }\      /| |\  |/  /\  \\     }\     }| |
+        `-'   `-'`----'  `----' `-' `-'`-'  `-' `---'  `---' `-'
+        
+        - example,how god communicate with human in the world.
+        - base case, and memoization dictionary for optimize.
+
+       ''')
+
 # USING MEMOIZATION TO OPTIMIZE CALCULATION ON THE FIBONACCI SEQUANCE
 
 # kita akan menghitung deret fibonacci dengan memanfaatkan hasil dari perhitungan sebelumnya. tentu dengan tujuan untuk optimalisasi proses komputasi dan perhitungan yang akan di lakukan oleh komputer kita.
@@ -57,5 +71,11 @@ def fibonacci_memo(n, memo={}): # fungsi utama yang akan kita mainkan adalah fib
 
     # Teori Rekursi: Rekursi adalah teknik pemrograman di mana fungsi memanggil dirinya sendiri untuk menyelesaikan masalah. Pada deret Fibonacci, kita menghitung setiap nilai dengan menjumlahkan dua nilai sebelumnya, dan proses ini secara alami bisa dipecah menjadi sub-masalah yang lebih kecil. Fungsi akan terus memanggil dirinya sendiri sampai mencapai kasus dasar. Rekursi memudahkan implementasi algoritma ini, meskipun tanpa optimasi memoization, ini akan mengarah pada perhitungan yang berulang.
     return memo[n]
+
+# setelah mendapatkan hasilnya kita akan memeanggil fungsi utama yang didalamnya telah menyimpan hasil dengan variabel n kemudian yang nantinya akan dicetak menggunakan print dengan range atau deret yang telah di tentukan.
+for i in range(10): # untuk variabel i dalam deret 0-10
+    print(fibonacci_memo(i), end=" ") # cetak lah fungsi fibonacci_memo dengan deret dari range variabel i, lalu akhiri.
+
+# DONE BANG. 
 
 
