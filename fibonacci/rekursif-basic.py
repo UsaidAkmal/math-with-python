@@ -44,9 +44,31 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
 
     # misalnya  
 
-    else: # atau kembalikan nilai fungsi utama (fibonacci_recursive) dengan penjumlahan dua angka sebelumnya
+    # fibonacci_recursive(5)
 
-        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2) # n-1 (mengurangi 1 dari bilangan "n") dan n-2 adalah (mengurangi 2 dari bilangan n)
+    # maka kode ini akan menyuruh python untuk melakukan pecarian dan perhitungan pada bilangan fibonacci_recursive(4), fibonacci_recursive(3), fibonacci_recursive(2), dan fibonacci_recursive(1). tentu hal ini akan menyebabkan pekerjaan komputasi jauh lebih berat ketimbang hanya meghitung satu rekursif saja.
+
+    # ilustrasi 
+
+    #     f(5)
+    # ├── f(4)
+    # │   ├── f(3)
+    # │   │   ├── f(2)
+    # │   │   ├── f(1)
+    # │   ├── f(2)
+    # ├── f(3)
+    # │   ├── f(2)
+    # │   ├── f(1)
+
+    # nah dapat dilihat bahwa variabel f(3) dan f(2) di panggil secara terus menerus yang membuat proses menjadi meningkat secara eksponensial.
+
+#-------------------------------------------------------------------------
+
+# lanjut :
+
+    else: # atau kembalikan nilai fungsi utama (fibonacci_recursive) dengan penjumlahan dua angka sebelumnya.
+
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2) # n-1 (mengurangi 1 dari bilangan "n",karena fibonacci dimulai dari angka 0 bukan 1) dan n-2 adalah (mengurangi 2 dari bilangan n,karena kita akan menggunakan bilangan sebelumnya untuk melakukan penjumlahan)
     
     # setelah menulis fungsinya selanjutnya kita akan menampilkan deret fibonacci yang sudah dibuat dengan metode rekursif dengan menggunakan for dan print 
 
