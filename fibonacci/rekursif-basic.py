@@ -68,9 +68,9 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
 
     else: # atau kembalikan nilai fungsi utama (fibonacci_recursive) dengan penjumlahan dua angka sebelumnya.
 
-        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2) # n-1 (mengurangi 1 dari bilangan "n",karena fibonacci dimulai dari angka 0 bukan 1) dan n-2 adalah (mengurangi 2 dari bilangan n,karena kita akan menggunakan bilangan sebelumnya untuk melakukan penjumlahan)
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2) # n-1 (mengurangi 1 dari bilangan "n",karena fibonacci dimulai dari angka 0 bukan 1) dan n-2 adalah (mengurangi 2 dari bilangan n,karena kita akan menggunakan bilangan sebelumnya untuk melakukan penjumlahan).
     
-    # setelah menulis fungsinya selanjutnya kita akan menampilkan deret fibonacci yang sudah dibuat dengan metode rekursif dengan menggunakan for dan print 
+    # setelah menulis fungsinya selanjutnya kita akan menampilkan deret fibonacci yang sudah dibuat dengan metode rekursif dengan menggunakan for dan print.
 
 for i in range(10): # untuk variabel i dengan deret 1 - 10 
     print(fibonacci_recursive(i), end=" ") # tampilkan hasil dari fungsi utama dengan  deret 1-10 berupa deret fibonacci.
