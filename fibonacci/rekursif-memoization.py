@@ -47,6 +47,15 @@ def fibonacci_memo(n, memo={}): # fungsi utama yang akan kita mainkan adalah fib
 # selanjutnya kita akan langsung melakukan operasi perhitungan atau yang akan kita sebut dengan algoritma utama yang akan menghitung deret fibonacci dengan menggunakan fungsi yang telah di optimalkan menggunakan memoisasi.
 
 # Pada baris ini, kita menghitung nilai Fibonacci untuk n dengan cara rekursif yang sudah disertakan dengan dictionary memoization.
+    memo[n] = fibonacci_memo(n-1, memo) + fibonacci_memo(n-2, memo) # hitunglah nilai dengan menggunakan prinsip yang sama  dengan dasar rekursif namun setelah mendapatkan hasilnya simpanlah kedalam memo,lalu kembalikan nilai memo yang telah di simpan.
 
+    # Fungsi ini memanggil dirinya sendiri untuk menghitung dua nilai sebelumnya dalam deret Fibonacci, yaitu fibonacci_memo(n-1, memo) dan fibonacci_memo(n-2, memo).
+
+    # Hasil dari kedua pemanggilan ini dijumlahkan untuk mendapatkan nilai Fibonacci pada urutan n.
+
+    # Setelah hasil perhitungan didapatkan, nilai tersebut disimpan dalam dictionary memo dengan kunci n, agar bisa digunakan kembali jika diperlukan di masa depan.
+
+    # Teori Rekursi: Rekursi adalah teknik pemrograman di mana fungsi memanggil dirinya sendiri untuk menyelesaikan masalah. Pada deret Fibonacci, kita menghitung setiap nilai dengan menjumlahkan dua nilai sebelumnya, dan proses ini secara alami bisa dipecah menjadi sub-masalah yang lebih kecil. Fungsi akan terus memanggil dirinya sendiri sampai mencapai kasus dasar. Rekursi memudahkan implementasi algoritma ini, meskipun tanpa optimasi memoization, ini akan mengarah pada perhitungan yang berulang.
+    return memo[n]
 
 

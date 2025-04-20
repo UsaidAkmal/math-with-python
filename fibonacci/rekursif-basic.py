@@ -70,6 +70,8 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
 
         return fibonacci_recursive(n-1) + fibonacci_recursive(n-2) # n-1 (mengurangi 1 dari bilangan "n",karena fibonacci dimulai dari angka 0 bukan 1) dan n-2 adalah (mengurangi 2 dari bilangan n,karena kita akan menggunakan bilangan sebelumnya untuk melakukan penjumlahan).
     
+    # Teori Rekursi: Rekursi adalah teknik pemrograman di mana fungsi memanggil dirinya sendiri untuk menyelesaikan masalah. Pada deret Fibonacci, kita menghitung setiap nilai dengan menjumlahkan dua nilai sebelumnya, dan proses ini secara alami bisa dipecah menjadi sub-masalah yang lebih kecil. Fungsi akan terus memanggil dirinya sendiri sampai mencapai kasus dasar. Rekursi memudahkan implementasi algoritma ini, meskipun tanpa optimasi memoization, ini akan mengarah pada perhitungan yang berulang.
+    
     # setelah menulis fungsinya selanjutnya kita akan menampilkan deret fibonacci yang sudah dibuat dengan metode rekursif dengan menggunakan for dan print.
 
 for i in range(10): # untuk variabel i dengan deret 1 - 10 
