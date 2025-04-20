@@ -42,7 +42,7 @@ def fibonacci_recursive(n): # mendefinisikan fungsi yang akan di gunakan dan di 
 
     # mengapa input bisa memperlambat proses algoritma? karena setiap fungsi yang kita tulis dengan menggunakan kode pada hakikatnya akan melakukan proses perhitungan yang disebut dengan algoritma, bagaimana algoritma dapat bekerja? untuk algoritma dapat bekerja kita memerlukan yang namanya input atau suatu kondisi dimana nantinya akan memicu proses pada kode yang sudah kita tulis dengan menggunakan fungsi yang di dalamnya terdapat algoritma.
 
-    # misalnya
+    # misalnya 
 
     else: # atau kembalikan nilai fungsi utama (fibonacci_recursive) dengan penjumlahan dua angka sebelumnya
 
