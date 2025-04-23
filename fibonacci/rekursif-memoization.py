@@ -70,12 +70,31 @@ def fibonacci_memo(n, memo={}): # fungsi utama yang akan kita mainkan adalah fib
     # Setelah hasil perhitungan didapatkan, nilai tersebut disimpan dalam dictionary memo dengan kunci n, agar bisa digunakan kembali jika diperlukan di masa depan.
 
     # Teori Rekursi: Rekursi adalah teknik pemrograman di mana fungsi memanggil dirinya sendiri untuk menyelesaikan masalah. Pada deret Fibonacci, kita menghitung setiap nilai dengan menjumlahkan dua nilai sebelumnya, dan proses ini secara alami bisa dipecah menjadi sub-masalah yang lebih kecil. Fungsi akan terus memanggil dirinya sendiri sampai mencapai kasus dasar. Rekursi memudahkan implementasi algoritma ini, meskipun tanpa optimasi memoization, ini akan mengarah pada perhitungan yang berulang.
+    return memo[n] # mengembalikan deret yang sudah tersimpan dalam dictionary memo[n], dengan deret yang sudah dilakukan operasi penjumlahan.
+
+
+
+# NOTES  PENTING !
+# Catatan Penting: Menggunakan dictionary default memo={} sebagai parameter fungsi bisa menyebabkan masalah jika fungsi dipanggil berkali-kali karena memo akan tetap ada antar pemanggilan. 
+# berikut adalah fungsi yang lebih aman
+
+def fibonacci_memo_safe(n, memo=None):
+    if memo is None:
+        memo = {}
+    
+    if n in memo:
+        return memo[n]
+    
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    memo[n] = fibonacci_memo_safe(n-1, memo) + fibonacci_memo_safe(n-2, memo)
     return memo[n]
 
 # setelah mendapatkan hasilnya kita akan memeanggil fungsi utama yang didalamnya telah menyimpan hasil dengan variabel n kemudian yang nantinya akan dicetak menggunakan print dengan range atau deret yang telah di tentukan.
 for i in range(10): # untuk variabel i dalam deret 0-10
-    print(fibonacci_memo(i), end=" ") # cetak lah fungsi fibonacci_memo dengan deret dari range variabel i, lalu akhiri.
+    print(fibonacci_memo_safe(i), end=" ") # cetak lah fungsi fibonacci_memo dengan deret dari range variabel i, lalu akhiri.
 
 # DONE BANG. 
-
-
