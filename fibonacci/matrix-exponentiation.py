@@ -28,4 +28,4 @@
 # Baris kedua x kolom kedua : [3 4] * [2]
 #                                     [4] maka : 3 * 2 + 4 * 4 = 6 + 16 = 22
 
-#    
+#        
