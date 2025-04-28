@@ -54,15 +54,24 @@ def fibonacci_matrix(n) :
      
      # APA YANG DIMAKSUD DENGAN INISIALISASI MATRIKS ?
      
-     # inisialisasi matriks merupakan proses pendefinisian sebuah matriks, layaknya variabel matriks juga perlu di definisikan terlebih dahulu.
+     # inisialisasi matriks merupakan proses pendefinisian sebuah nilai yang ada di dalam matriks, layaknya array, matriks juga perlu di definisikan menggunakan nilai terlebih dahulu, tentu nilainya lebih dari satu ya, dan nilainya berupa variabel, angka, fungsi, boolean.
      
      # matriks dalam bahasa pemrograman python nilainnya akan diwakilkan menggunakan array 2 dimensi, mengapa haru array 2 dimensi?, karena Matriks itu pada dasarnya adalah kumpulan elemen (angka, bilangan kompleks, simbol, dsb) yang disusun dalam baris dan kolom.
      
-     # dan konsep array  dimensi lah yang mewakilkan sifat matriks dalam pemrograman , matriks adalah array yang tersusun didalam variabel, yang berjumlah baris dan kolom.
+     # dan konsep array  dimensi lah yang mewakilkan sifat matriks dalam pemrograman, matriks adalah array yang tersusun didalam variabel, yang berjumlah baris dan kolom.
      
      # mengapa bukan array 1 dimensi atau 3 dimensi saja?, array 1 dimensi hanya mampu menampung nilai yang berderet linear, sedangkan array 3 dimensi,memiliki dimensi yang terlalu banyak, yaitu 3 sedangkan matriks hanya memerlukan 2 dimensi untuk dapat menjalankan operasi matematikanya.
      
+     # FUNGSI INISIALISASI MATRIKS :
     
-     # menentukan ukuran matriks
-     # memberikan nilai awal ke setiap elemen
+     # menentukan ukuran matriks.
+     # memberikan nilai awal ke setiap elemen.
      # membentuk struktur kosong (matriks nol) untuk nantinya akan di isi dengan bilangan yang kita inginkan.
+
+     # selanjutnya kita akan membuat inisialisasi matriks yang akan kita gunakan untuk operasi hhitung fibonacci ini. lets started!
+
+     F = [[1, 1],
+          [1, 0]] # disini saya menginisialisasikan sebuah matriks bernama F, F memiliki nilai [1, 1]
+          #                                                                                    [1, 0]
+          
+     
