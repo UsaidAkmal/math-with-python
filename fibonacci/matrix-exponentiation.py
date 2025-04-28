@@ -38,3 +38,5 @@
 
 # maka hasil dari matriks A pangkat 2 adalah [7  10]
 #                                            [15 22]
+
+# penjelasan singkatnya adalah setiap elemen baris dari matriks pertama dengan elemen kolom dari matriks kedua.
