@@ -30,3 +30,8 @@
 
 # Setelah kita melakukan perkalian matriks berpangkat ini, kita sudah mengetahui bilangan apa saja yang menjadi hasil dari perkalian matriks ini, yaitu 7, 10, 15, 22, maka matriks yang akan di hasilkan adalah 
 
+# baris pertama berada di baris pertama hasil
+# dan baris kedua berada di baris kedua hasil
+
+# [7  10] hasil dari perhitungan baris pertama 7 dan 10.
+# [15 22] hasil dari perhitungan baris kedua, yaitu 15 dan 22.
