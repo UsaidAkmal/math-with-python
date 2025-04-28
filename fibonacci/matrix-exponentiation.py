@@ -43,7 +43,7 @@
 
 # mulanya kita akan mendefinsikan fungsinya terlebih dahulu.
  
-def fibonacci_matrix(n) :
+des fibonacci_matrix(n) :
      
      # lalu selanjutnya kita akan membuat base case untuk menjadi dasar dari algoritma atau alur dari kode kita .
      
