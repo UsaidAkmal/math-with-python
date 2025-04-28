@@ -35,3 +35,6 @@
 
 # [7  10] hasil dari perhitungan baris pertama 7 dan 10.
 # [15 22] hasil dari perhitungan baris kedua, yaitu 15 dan 22.
+
+# maka hasil dari matriks A pangkat 2 adalah [7  10]
+#                                            [15 22]
