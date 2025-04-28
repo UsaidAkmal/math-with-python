@@ -40,3 +40,29 @@
 #                                            [15 22]
  
 # penjelasan singkatnya adalah setiap elemen baris dari matriks pertama dengan elemen kolom dari matriks kedua.
+
+# mulanya kita akan mendefinsikan fungsinya terlebih dahulu.
+ 
+ def fibonacci_matrix(n) :
+     
+     # lalu selanjutnya kita akan membuat base case untuk menjadi dasar dari algoritma atau alur dari kode kita .
+     
+     if n == 0: # jika n sama dengan 0, maka
+         return 0 # kembalikan nilai 0
+         
+     # sebelum sebuah matriks atau kombinasi bilangan dalam satu variabel ini dapat digunakan dalam kode kita, kita harus dan wajib untuk melakukan inisialisasi.
+     
+     # APA YANG DIMAKSUD DENGAN INISIALISASI MATRIKS ?
+     
+     # inisialisasi matriks merupakan proses pendefinisian sebuah matriks, layaknya variabel matriks juga perlu di definisikan terlebih dahulu.
+     
+     # matriks dalam bahasa pemrograman python nilainnya akan diwakilkan menggunakan array 2 dimensi, mengapa haru array 2 dimensi?, karena Matriks itu pada dasarnya adalah kumpulan elemen (angka, bilangan kompleks, simbol, dsb) yang disusun dalam baris dan kolom.
+     
+     # dan konsep array  dimensi lah yang mewakilkan sifat matriks dalam pemrograman , matriks adalah array yang tersusun didalam variabel, yang berjumlah baris dan kolom.
+     
+     # mengapa bukan array 1 dimensi atau 3 dimensi saja?, array 1 dimensi hanya mampu menampung nilai yang berderet linear, sedangkan array 3 dimensi,memiliki dimensi yang terlalu banyak, yaitu 3 sedangkan matriks hanya memerlukan 2 dimensi untuk dapat menjalankan operasi matematikanya.
+     
+# 
+     # menentukan ukuran matriks
+     # memberikan nilai awal ke setiap elemen
+     # membentuk struktur kosong (matriks nol) untuk nantinya akan di isi dengan bilangan yang kita inginkan.
