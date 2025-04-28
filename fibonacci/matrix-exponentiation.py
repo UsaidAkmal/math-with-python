@@ -62,7 +62,7 @@ def fibonacci_matrix(n) :
      
      # mengapa bukan array 1 dimensi atau 3 dimensi saja?, array 1 dimensi hanya mampu menampung nilai yang berderet linear, sedangkan array 3 dimensi,memiliki dimensi yang terlalu banyak, yaitu 3 sedangkan matriks hanya memerlukan 2 dimensi untuk dapat menjalankan operasi matematikanya.
      
-# 
+    
      # menentukan ukuran matriks
      # memberikan nilai awal ke setiap elemen
      # membentuk struktur kosong (matriks nol) untuk nantinya akan di isi dengan bilangan yang kita inginkan.
