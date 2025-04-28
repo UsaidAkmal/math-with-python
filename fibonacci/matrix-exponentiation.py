@@ -28,4 +28,5 @@
 # Baris kedua x kolom kedua : [3 4] * [2]
 #                                     [4] maka : 3 * 2 + 4 * 4 = 6 + 16 = [22]
 
-# Setelah kita melakukan perkalian matriks berpangkat ini, kita sudah mengetahui bilangan apa saja yang menjadi hasil dari perkalian matriks ini, yaitu 
+# Setelah kita melakukan perkalian matriks berpangkat ini, kita sudah mengetahui bilangan apa saja yang menjadi hasil dari perkalian matriks ini, yaitu 7, 10, 15, 22, maka matriks yang akan di hasilkan adalah 
+
