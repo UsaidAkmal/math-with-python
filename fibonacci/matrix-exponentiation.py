@@ -80,6 +80,12 @@ def fibonacci_matrix(n) :
 
      # yang artinya kita bisa menghitung angka Fibonacci ke-n jauh lebih cepat daripada menggunakan metode rekursi biasa.
 
-     # mengapa hal itu bisa terjdi? 
+     # mengapa hal itu bisa terjadi? 
+
+     # berikut adlah perbandingan Metode yang kita gunakan mulai dari rekursi, iterasi, dan matriks:
+
+# REKURSI
+
+#
           
      
