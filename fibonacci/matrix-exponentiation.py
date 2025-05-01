@@ -89,10 +89,20 @@ def fibonacci_matrix(n) :
 # REKURSI |
 # Pendekatan rekursif naif menghitung F(n) dengan memanggil F(n-1) dan F(n-2), yang masing-masing memanggil dua fungsi lagi, dan seterusnya. Ini menciptakan pohon rekursi dengan jumlah node yang tumbuh secara eksponensial. Untuk n=1000, jumlah operasi yang diperlukan melebihi jumlah atom di alam semesta, jelas tidak feasible.Jika dihitung secara rekursif langsung, untuk mendapatkan F(1000) komputer harus:
 # 
+# Bottom-up: Harus mencapai base case (F(0)/F(1)) dulu baru kembali
 # Menghitung F(999) dan F(998)
 # Untuk menghitung F(999), perlu F(998) dan F(997)
 # Proses itu akan berulang hngga dasra F(0) dan F(1)
-# ini akan menghasilkan pohon rekursi dengan sekitar 2 pangkat 1000 operasi, ini akan mengakibatkan proses komputasi akan meningkat secara drastis.
+# ini akan menghasilkan pohon rekursi dengan sekitar 2 pangkat 1000 operasi, ini akan mengakibatkan proses komputasi akan meningkat secara drastis:
+#   f(5)
+    # ├── f(4)
+    # │   ├── f(3)
+    # │   │   ├── f(2)
+    # │   │   ├── f(1)
+    # │   ├── f(2)
+    # ├── f(3)
+    # │   ├── f(2)
+    # │   ├── f(1)
 
 
 # ITERASI |
@@ -102,7 +112,19 @@ def fibonacci_matrix(n) :
 # Penjelasan:
 # Dilakukan tepat n-1 iterasi untuk menghitung F(n)
 # Setiap iterasi melakukan operasi O(1) (penjumlahan dan penugasan)
-# Total operasi: n-1 → O(n)
+# Total operasi: n-1 → O(n), Artinya waktu eksekusi berbanding lurus dengan n, ketika n yang hendak dicapai nilainya besar maka proses akan berjalan linear sejalan dengan n yang hendak di capai, semakin besar n maka proses komputasi akan semakin besar juga.
+# Jika n=1000 butuh 1ms, maka n=2000 butuh ~2ms
+# membutuhkan waktu lebih lama untuk n besar
+# Mengapa Disebut O(n)?
+# Karena hubungan antara input (n) dan waktu eksekusi membentuk garis lurus:
+# Waktu
+#   | 
+#   |    /
+#   |   /
+#   |  /
+#   | /
+#   |________
+#        n
           
 # MATRIKS |
 #  Ketika kita mendengar kata "Fibonacci", yang terlintas di pikiran biasanya adalah sebuah barisan angka yang dimulai dari 0 dan 1, lalu setiap angka setelahnya merupakan penjumlahan dari dua angka sebelumnya:
