@@ -102,7 +102,7 @@ def fibonacci_matrix(n) :
     # │   ├── f(2)
     # ├── f(3)
     # │   ├── f(2)
-    # │   ├── f(1)
+    # │   ├── f(1) 
 # dan proses ini akan membuat cabang semakin banyak ketika n yang hendak dicapai juga semakin besar.
 
 
