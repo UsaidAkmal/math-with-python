@@ -86,13 +86,16 @@ def fibonacci_matrix(n) :
 
 # Fungsi Fibonacci didefinisikan sebagai F(n) = F(n-1) + F(n-2) dengan F(0) = 0 dan F(1) = 1
 
+#  Ketika kita mendengar kata "Fibonacci", yang terlintas di pikiran biasanya adalah sebuah barisan angka yang dimulai dari 0 dan 1, lalu setiap angka setelahnya merupakan penjumlahan dari dua angka sebelumnya:
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, ... dan seterusnya.
+
 # REKURSI |
 # Pendekatan rekursif naif menghitung F(n) dengan memanggil F(n-1) dan F(n-2), yang masing-masing memanggil dua fungsi lagi, dan seterusnya. Ini menciptakan pohon rekursi dengan jumlah node yang tumbuh secara eksponensial. Untuk n=1000, jumlah operasi yang diperlukan melebihi jumlah atom di alam semesta, jelas tidak feasible.Jika dihitung secara rekursif langsung, untuk mendapatkan F(1000) komputer harus:
 # 
 # Bottom-up: Harus mencapai base case (F(0)/F(1)) dulu baru kembali
 # Menghitung F(999) dan F(998)
 # Untuk menghitung F(999), perlu F(998) dan F(997)
-# Proses itu akan berulang hngga dasra F(0) dan F(1)
+# Proses itu akan berulang hingga dasar F(0) dan F(1)
 # ini akan menghasilkan pohon rekursi dengan sekitar 2 pangkat 1000 operasi, ini akan mengakibatkan proses komputasi akan meningkat secara drastis:
 #   f(5)
     # ├── f(4)
@@ -128,5 +131,32 @@ def fibonacci_matrix(n) :
 #        n
           
 # MATRIKS |
-#  Ketika kita mendengar kata "Fibonacci", yang terlintas di pikiran biasanya adalah sebuah barisan angka yang dimulai dari 0 dan 1, lalu setiap angka setelahnya merupakan penjumlahan dari dua angka sebelumnya:
-# 0, 1, 1, 2, 3, 5, 8, 13, 21, ... dan seterusnya.
+# Di sinilah metode matriks muncul sebagai solusi yang jauh lebih efisien, mengurangi kompleksitas waktu dari O(n)O(n) (iteratif) atau bahkan O(2n)O(2n) (rekursif naif) menjadi hanya O(log⁡n).
+# Fibonacci dapat direpresentasikan dalam bentuk perkalian matriks:
+# 
+# F = [[1, 1],
+#      [1, 0]]
+#   = (F(n+1)F(n)​F(n)F(n−1)​)
+# Metode matriks bisa mencapai kecepatan luar biasa (O(log⁡n)O(logn)) karena memanfaatkan dua prinsip matematika kunci:
+
+# Eksponensiasi Cermat
+# Contoh: Hitung A13A13 (untuk F(14)F(14)):
+
+# Cara Naif: A×A×...×AA×A×...×A (13 kali) → 12 perkalian
+
+# Cara Cerdas:
+# 13 = 1101₂ (biner)  
+# 1. Hitung \(A^1\) (simpan)  
+# 2. Kuadratkan: \(A^2 = A^1 × A^1\)  
+# 3. Kuadratkan lagi: \(A^4 = A^2 × A^2\)  
+# 4. Kalikan dengan \(A^1\): \(A^5 = A^4 × A^1\) (karena bit ke-2=1)  
+# 5. Kuadratkan: \(A^{10} = A^5 × A^5\)  
+# 6. Kalikan dengan \(A^1\): \(A^{13} = A^{10} × A^1\) (bit terakhir=1)  
+
+# Sifat Khusus Matriks Fibonacci
+# Setiap kali dikuadratkan, ia "melompati" beberapa angka Fibonacci sekaligus.
+
+# Contoh:
+#  F(5)=
+#  (1 1)4 = (5 3)
+#  (1 0​)4 = (3 ​2​)    4, disini ialah pangkat 4
