@@ -84,8 +84,15 @@ def fibonacci_matrix(n) :
 
      # berikut adlah perbandingan Metode yang kita gunakan mulai dari rekursi, iterasi, dan matriks:
 
+# Fungsi Fibonacci didefinisikan sebagai F(n) = F(n-1) + F(n-2) dengan F(0) = 0 dan F(1) = 1
+
 # REKURSI |
-# Pendekatan rekursif naif menghitung F(n) dengan memanggil F(n-1) dan F(n-2), yang masing-masing memanggil dua fungsi lagi, dan seterusnya. Ini menciptakan pohon rekursi dengan jumlah node yang tumbuh secara eksponensial. Untuk n=1000, jumlah operasi yang diperlukan melebihi jumlah atom di alam semesta, jelas tidak feasible.
+# Pendekatan rekursif naif menghitung F(n) dengan memanggil F(n-1) dan F(n-2), yang masing-masing memanggil dua fungsi lagi, dan seterusnya. Ini menciptakan pohon rekursi dengan jumlah node yang tumbuh secara eksponensial. Untuk n=1000, jumlah operasi yang diperlukan melebihi jumlah atom di alam semesta, jelas tidak feasible.Jika dihitung secara rekursif langsung, untuk mendapatkan F(1000) komputer harus:
+
+# Menghitung F(999) dan F(998)
+# Untuk menghitung F(999), perlu F(998) dan F(997)
+# Proses itu akan berulang hngga dasra F(0) dan F(1)
+# ini akan menghasilkan pohon rekursi dengan sekitar 2 pangkat 1000 operasi, ini akan mengakibatkan proses komputasi akan meningkat secara drastis.
 
 # ITERASI |
 # Pendekatan iteratif dengan menyimpan dua nilai terakhir memiliki kompleksitas O(n), sudah lebih baik tetapi masih memerlukan 1000 iterasi untuk F(1000).
