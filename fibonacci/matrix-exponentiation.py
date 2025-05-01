@@ -160,3 +160,5 @@ def fibonacci_matrix(n) :
 #  F(5)=
 #  (1 1)4 = (5 3)
 #  (1 0​)4 = (3 ​2​)    4, disini ialah pangkat 4
+
+# Elemen (0,0) langsung memberikan F(5)=5F(5)=5, tanpa perlu hitung F(1)F(1) sampai F(4)F(4) satu per satu.
