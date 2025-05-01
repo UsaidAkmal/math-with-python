@@ -50,7 +50,7 @@ def fibonacci_matrix(n) :
      if n == 0: # jika n sama dengan 0, maka
          return 0 # kembalikan nilai 0
          
-     # sebelum sebuah matriks atau kombinasi bilangan dalam satu variabel ini dapat digunakan dalam kode kita, kita harus dan wajib untuk melakukan inisialisasi.
+     # sebelum sebuah matriks atau kombinasi bilangan dalam satu variabel ini dapat digunakan dalam kode kita, kita harus dan wajib untuk melakukan inisialisasi agar tidak terjadi infinity loops yang akan sangat merusak.
      
      # APA YANG DIMAKSUD DENGAN INISIALISASI MATRIKS ?
      
@@ -71,7 +71,15 @@ def fibonacci_matrix(n) :
      # selanjutnya kita akan membuat inisialisasi matriks yang akan kita gunakan untuk operasi hhitung fibonacci ini. lets started!
 
      F = [[1, 1],
-          [1, 0]] # disini saya menginisialisasikan sebuah matriks bernama F, F memiliki nilai [1, 1]
-          #                                                                                    [1, 0]
+          [1, 0]] # disini saya menginisialisasikan sebuah matriks bernama F.
+     # nilai matriks F adalah:
+     #    [1, 1]
+     #    [1, 0] ini adalah nilai inisialisasi awal dari matriks F.
+
+     # matriks F ini nantinya akan berfungsi untuk menjadi transformasi dasar(matriks dasar), atau perubahan awal. dalam kode kita, matriks ini adalah representasi dari hubungan F(n)=F(n−1)+F(n−2) dalam fibonacci.
+
+     # yang artinya kita bisa menghitung angka Fibonacci ke-n jauh lebih cepat daripada menggunakan metode rekursi biasa.
+
+     # mengapa hal itu bisa terjdi? 
           
      
