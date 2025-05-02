@@ -165,5 +165,12 @@ def fibonacci_matrix(n) :
 
 # Selanjutnya kita akan membuat fungsi untuk mengalikan dua matriks 2x2
      def matrix_multiply(A, B): # mendefiniskan fungsi matrix_multiply sebagai wadah untuk hasil dari perkalian matriks 2x2 yang sudah dilakukan.
-          C = [[0, 0] # Matrix C ini merupakan wadah untuk jawaban yang sudah di hitung sebelumnya, dan mengapa matrix ini tidak memiliki bilangan alias kosong
+          C = [[0, 0] # Matrix C ini merupakan wadah untuk jawaban yang sudah di hitung sebelumnya, dan mengapa matrix ini tidak memiliki bilangan alias kosong.
                [0, 0]]
+          for i in range(2):
+               for j in range(2):
+                    for k in range(2):
+                         C[i][j] += A[i][k] * B[k][j]
+
+          return C
+     
