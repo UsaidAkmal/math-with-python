@@ -162,3 +162,8 @@ def fibonacci_matrix(n) :
 #  (1 0​)4 = (3 ​2​)    4, disini ialah pangkat 4
 
 # Elemen (0,0) langsung memberikan F(5)=5F(5)=5, tanpa perlu hitung F(1)F(1) sampai F(4)F(4) satu per satu.
+
+# Selanjutnya kita akan membuat fungsi untuk mengalikan dua matriks 2x2
+     def matrix_multiply(A, B): # mendefiniskan fungsi matrix_multiply sebagai wadah untuk hasil dari perkalian matriks 2x2 yang sudah dilakukan.
+          C = [[0, 0] # Matrix C ini merupakan wadah untuk jawaban yang sudah di hitung sebelumnya, dan mengapa matrix ini tidak memiliki bilangan alias kosong
+               [0, 0]]
