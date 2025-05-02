@@ -163,14 +163,16 @@ def fibonacci_matrix(n) :
 
 # Elemen (0,0) langsung memberikan F(5)=5F(5)=5, tanpa perlu hitung F(1)F(1) sampai F(4)F(4) satu per satu.
 
-# Selanjutnya kita akan membuat fungsi untuk mengalikan dua matriks 2x2
+# Selanjutnya kita akan membuat fungsi untuk mengalikan dua matriks 2x2, Fungsi ini adalah jantung dari perhitungan eksponensiasi matriks (matrix_power), yang pada gilirannya adalah inti dari metode percepatan Fibonacci. Tanpa fungsi ini, kamu tidak bisa melakukan pangkat matriks.
+
      def matrix_multiply(A, B): # mendefiniskan fungsi matrix_multiply sebagai wadah untuk hasil dari perkalian matriks 2x2 yang sudah dilakukan.
           C = [[0, 0] # Matrix C ini merupakan wadah untuk jawaban yang sudah di hitung sebelumnya, dan mengapa matrix ini tidak memiliki bilangan alias kosong.
                [0, 0]]
-          for i in range(2):
-               for j in range(2):
-                    for k in range(2):
-                         C[i][j] += A[i][k] * B[k][j]
+          # melakukan for loop untuk mengiterasi(melakukan suatu proses atau tindakan berulang-ulang sampai tujuan atau kondisi tertentu tercapai.) setiap baris dan kolom. pada array 2 dimensi yang merepresentasi kan matriks.
+          for i in range(2): # mengiterasi baris dari matriks hasil C
+               for j in range(2): # mengiterasi kolom dari matriks hasil C
+                    for k in range(2): # menjodohkan elemen dari baris A dan kolom B untuk dikalikan dan dijumlahkan
+                         C[i][j] += A[i][k] * B[k][j] # "Tambahkan ke elemen baris ke-i, kolom ke-j dari matriks C, hasil dari perkalian elemen baris ke-i, kolom ke-k dari matriks A, dengan elemen baris ke-k, kolom ke-j dari matriks B."
 
-          return C
+          return C # mengembalikan nilai C sebagai hasil dari proses perkalian antara matriks A dan B.
      
