@@ -175,4 +175,4 @@ def fibonacci_matrix(n) :
                          C[i][j] += A[i][k] * B[k][j] # "Tambahkan ke elemen baris ke-i, kolom ke-j dari matriks C, hasil dari perkalian elemen baris ke-i, kolom ke-k dari matriks A, dengan elemen baris ke-k, kolom ke-j dari matriks B."
 
           return C # mengembalikan nilai C sebagai hasil dari proses perkalian antara matriks A dan B.
-         
+          
